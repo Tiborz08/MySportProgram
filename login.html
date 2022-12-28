@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="src/img/logoMSP.jpeg">
+    <link rel="stylesheet" href="bonus.css" class="rel">
+    <link href="dist/style.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200 flex content-center justify-center items-center h-full">
+  <div class="bg-white shadow-lg max-w-lg md:flex">
+    <img class="w-full h-40 object-cover md:h-full flex-1" src="src/img/img1.png" alt="">
+    <div class="p-4 flex-1 md:flex md:flex-col justify-center">
+      <h1 class="text-2xl font-bold text-gray-800 mb-2">Connexion</h1>
+      <form action="#" method="post" autocomplete="true">
+        <div class="mb-4">
+          <label for="username" placeholder="Entrer nom" class="block text-gray-600 mb-2">
+            Nom d'utilisateur
+          </label>
+          <input type="text" id="username" name="username" class="input-primary" spellcheck="false">
+        </div>
+        <div class="mb-4">
+          <label for="password" placeholder="Entrer mot de passe" class="block text-gray-600 mb-2">
+            Mot de passe
+          </label>
+          <input type="password" id="password" name="password" class="input-primary" spellcheck="false">
+        </div>
+        <button type="submit" onclick=user() class="btn-primary">Se connecter</button>
+      </form>
+    </div>
+  </div>
+  <script src="formulaire.js"></script>
+  <script src="user.js"></script>
+</body>
+</html>
