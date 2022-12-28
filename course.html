@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
+<html lang="en">
+<head class="smooth-scroll">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
+    <title>MSP/course</title>
     <link rel="icon" type="image/x-icon" href="src/img/logoMSP.jpeg">
     <link href="dist/style.css" rel="stylesheet">
     <link href="bonus.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-200">
+    
     <div id="header" class="top-0 w-full">
         <header class="text-gray-700 z-50 relative">
             <div class="max-w-screen-2xl mx-auto w-full py-4 bg-white transition duration-200 lg:bg-transparent lg:py-6">
@@ -102,125 +103,25 @@
             </div>
         </header>
     </div>
-    <section class="h-90 bg-black relative">
-        <video class="w-full h-full object-cover opacity-50 shadow-lg" src="src/videos/video3.mp4" loop autoplay muted></video>
-        <div class="absolute flex flex-col flex-wrap md:py-12 sm:py-10 py-8 mx-auto lg:px-40 md:px-20 px-14 w-full h-full top-0 left-0 z-20 justify-center items-center inactive">
-            <h1 class="lg:text-6xl text-center text-white text-2xl md:text-4xl sm:text-3xl inactive-1">Tu Préfères <strong>ATTENDRE</strong> Un Miracle Ou Changer <strong>MAINTENANT ?</strong></h2>
-            <div class="text-gray-300 text-center font-light">
-                <p class="inactive-2 sm:text-base text-sm md:text-lg xl:text-2xl sm:block">Je Vais Te Montrer <strong>Tout Les Exercices</strong> Pour Devenir Un <strong>SURHUMAIN</strong></p>
-            </div>
-            <a class="inactive-3 animate-bounce md:mt-10 mt-10 text-center" href="#prog">
-                <span class="text-white sm:text-2xl text-xl xl:text-4xl lg:text-3xl text-semibold rounded-full px-4 py-3 bg-blue-500 hover:bg-blue-600">
-                    Commencer
-                </span>
-                <!-- div.maclasse#monid*20>p{mon texte}.maclasse*2 == raccourci Emmet -->
-                <!-- cmd + K + C == commentaire auto -->
-            </a>
-        </div>
-    </section>
-    <div class="max-w-screen-xl md:mt-20 mt-16 mb-12 mx-auto text-center">
-        <h1 class="inactive mt-4 lg:text-5xl sm:text-4xl text-3xl font-bold tracking-tight text-[#1e64e6] xl:leading-[3.5rem]" id="prog">Programmes sans équipements :</h1>
+
+    <div class="my-20">
+        <h1 class="text-3xl text-center font-bold">Qu'est-ce qu'implique la course à pieds ?</h1>
     </div>
-    <div class="inactive md:flex-row flex items-center justify-center md:gap-x-10 lg:gap-x-16 flex-col gap-y-[3.25rem] mx-auto lg:px-40 px-20">
-        <div class="inactive-1 max-w-sm flex flex-col items-center bg-gray-200 pb-5 shadow-lg">
-            <img class="w-full max-h-56" src="src/img/cali.jpeg" alt="img prg1">
-            <h5 class="py-3 px-2 text-lg font-bold">Programme 1</h5>
-            <p class="py-3 px-2 text-gray-600 text-sm text-center">Programme débutant Street workout, crossfit et course à pied</p>
-            <a class="py-3 max-w-10 h-10 hover:ease-in-out transition duration-300 hover:scale-125" href="#">
-                <span class=" text-white px-4 py-2 bg-blue-500 font-bold hover:bg-blue-600 rounded-full">
-                    C'est parti
-                </span>
-            </a>
-        </div>
-        <div class="inactive-2 max-w-sm flex flex-col items-center bg-gray-200 pb-5 shadow-lg">
-            <img class="w-full max-h-56" src="src/img/cali.jpeg" alt="img prg1">
-            <h5 class="py-3 px-2 text-lg font-bold">Programme 2</h5>
-            <p class="py-3 px-2 text-gray-600 text-sm text-center">Programme intermédiaire Street workout, crossfit et course à pied</p>
-            <a class="py-3 max-w-10 h-10 hover:ease-in-out transition duration-300 hover:scale-125" href="#">
-                <span class=" text-white px-4 py-2 bg-blue-500 font-bold hover:bg-blue-600 rounded-full">
-                    C'est parti
-                </span>
-            </a>
-        </div>
-        <div class="inactive-3 max-w-sm flex flex-col items-center bg-gray-200 pb-5 shadow-lg">
-            <img class="w-full max-h-56" src="src/img/cali.jpeg" alt="img prg1">
-            <h5 class="py-3 px-2 text-lg font-bold">Programme 3</h5>
-            <p class="py-3 px-2 text-gray-600 text-sm text-center">Programme avancé Street workout, crossfit et course à pied</p>
-            <a class="py-3 max-w-10 h-10 hover:ease-in-out transition duration-300 hover:scale-125" href="#">
-                <span class="text-white px-4 py-2 bg-blue-500 font-bold hover:bg-blue-600 rounded-full">
-                    C'est parti
-                </span>
-            </a>
-        </div>
+    <div class="my-20">
+        <h1 class="text-3xl text-center font-bold">Est-elle dangereuse ?</h1>
     </div>
-    <div class="mt-28 mb-20 mx-auto inactive flex flex-col justify-center items-center">
-        <h2 class="text-4xl font-bold text-blue-500 mb-4 inactive-1">Questions fréquentes</h2>
-        <ul class="flex flex-col gap-y-4 justify-center items-center">
-            <li class="py-2 border-b-2 inactive-2">
-                <div class="flex flex-col items-center justify-center">
-                    <div class="flex">
-                        <a id="q1" class="faq-font-style">Dans combien de temps verrai-je des résultats ?</a>
-                    </div>
-                    <div id="r1" class="hidden text-center">
-                        <p class="py-2">Il y a différents types de boucles mais elles se ressemblent toutes au sens où elles répètent une action un certain nombre de fois (ce nombre peut éventuellement être zéro). Les différents types de boucles permettent d'utiliser différentes façon de commencer et de terminer une boucle.</p>
-                    </div>
-                </div>
-            </li>
-            <li class="py-2 border-b-2 inactive-3">
-                <div class="flex flex-col items-center justify-center">
-                    <a id="q2" class="faq-font-style">Est-ce que mon âge compte?</a>
-                    <div id="r2" class="ease-in-out hidden text-center">
-                        <p class="py-2">Il y a différents types de boucles mais elles se ressemblent toutes au sens où elles répètent une action un certain nombre de fois (ce nombre peut éventuellement être zéro). Les différents types de boucles permettent d'utiliser différentes façon de commencer et de terminer une boucle.</p>
-                    </div>
-                </div>
-            </li>
-            <li class="py-2 border-b-2 inactive-4">
-                <div class="flex flex-col items-center justify-center">
-                    <a id="q3" class="faq-font-style">Je n'ai pas beaucoup de temps, est-ce un problème ?</a>
-                    <div id="r3" class="ease-in-out hidden text-center">
-                        <p class="py-2">Il y a différents types de boucles mais elles se ressemblent toutes au sens où elles répètent une action un certain nombre de fois (ce nombre peut éventuellement être zéro). Les différents types de boucles permettent d'utiliser différentes façon de commencer et de terminer une boucle.</p>
-                    </div>
-                </div>
-            </li>
-            <li class="py-2 border-b-2 inactive-5">
-                <div class="flex flex-col items-center justify-center">
-                    <a id="q4" class="faq-font-style">Je n'ai jamais fait de sport de ma vie, est-ce un problème?</a>
-                    <div id="r4" class="ease-in-out hidden text-center">
-                        <p class="py-2">Il y a différents types de boucles mais elles se ressemblent toutes au sens où elles répètent une action un certain nombre de fois (ce nombre peut éventuellement être zéro). Les différents types de boucles permettent d'utiliser différentes façon de commencer et de terminer une boucle.</p>
-                    </div>
-                </div>
-            </li>
-            <li class="py-2 inactive-6">
-                <div class="flex flex-col items-center justify-center">
-                    <a id="q5" class="faq-font-style">Toujours des questions ?</a>
-                    <div id="r5" class="ease-in-out hidden text-center">
-                        <div class="flex flex-col gap-y-2 pt-2">
-                            <label for="question" id="question">Nous sommes à votre écoute</label>
-                            <div class="flex gap-2">
-                                <input id="question" type="text" class="input-primary">
-                                <button type="submit" class="btn-primary">Envoyer</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
+    <div class="my-20">
+        <h1 class="text-3xl text-center font-bold">A-t-on besoin d'équipement pour pratiquer la cours à pieds</h1>
     </div>
-    <div class="bg-[#1e64e6] w-full mt-12 text-white">
-        <div class="flex flex-col justify-center items-center py-16 max-w-lg mx-auto">
-            <h1 class="text-2xl font-semibold py-4">Informations, nouvelles, inscrivez vous</h1>
-            <p class="text-sm py-4 text-center text-gray-100 font-light">Les nouvelles importantes de MySportProgram, mais aussi les conseils exlusifs qu'on veut vous faire part.</p>
-            <form action="#" method="get">
-                <input class="rounded-full w-96 bg-[#1e64e6] border-[1px] py-2 px-3 border-gray-100 text-gray-50 focus:border-white focus:text-white" type="text" id="email" placeholder="Votre email"><br>
-                <div class="text-center">
-                    <button type="submit" class="w-44 py-2 px-4 mt-2 rounded-full bg-white text-[#1e64e6] text-lg hover:bg-gray-100 mx-auto">Envoyer</button>
-                </div>
-                
-            </form>
-        </div>
+    <div class="my-20">
+        <h1 class="text-3xl text-center font-bold">Est-elle bénéfique ?</h1>
     </div>
+    <div class="my-20">
+        <h1 class="text-3xl text-center font-bold">D'autres questions ?</h1>
+    </div>
+
     <footer class="bottom-0 mx-auto mb-16 border-t-2 h-28">
-        <div class="md:flex md:gap-x-20 xl:gap-x-52 lg:gap-x-28 md:mx-3 md:justify-center md:my-16 hidden">
+        <div class="md:flex md:gap-x-20 xl:gap-x-52 lg:gap-x-28 md:mx-3 md:justify-center md:my-24 hidden">
             <ul class="flex flex-col gap-y-2 py-2">
                 <li><h1 class="text-base font-semibold text-blue-500">A Propos</h1></li>
                 <li class="pt-4"><a href="" class="ft-font-style">Politique de confidentialité</a></li>
@@ -277,14 +178,14 @@
             </ul>
         </div>
         <div class="md:hidden block my-16 mx-4 sm:mx-14">
-            <div class="flex flex-row sm:gap-32 gap-16 ml-12 sm:ml-16 mb-4 justify-start">
-                <ul class="flex flex-col gap-y-2 py-2 max-w-[80px]">
+            <div class="flex flex-row sm:gap-32 gap-16 ml-12 sm:ml-16 mb-16 justify-start">
+                <ul class="flex flex-col gap-y-2 py-2">
                     <li><h1 class="text-base font-semibold text-blue-500">A Propos</h1></li>
                     <li class="pt-4"><a href="" class="ft-font-style">Politique de confidentialité</a></li>
                     <li><a href="" class="ft-font-style">Histoire</a></li>
                     <li><a href="" class="ft-font-style">CGU</a></li>
                 </ul>
-                <ul class="flex flex-col gap-y-2 py-2 pl-24 justify-start">
+                <ul class="flex flex-col gap-y-2 py-2 justify-start">
                     <li><h1 class="text-base font-semibold text-blue-500">Ressources</h1></li>
                     <li class="pt-4"><a href="" class="ft-font-style">Contact</a></li>
                     <li><a href="" class="ft-font-style">Reviews</a></li>
@@ -339,5 +240,6 @@
     </footer>
     <script src="formulaire.js"></script>
     <script src="menus.js"></script>
+
 </body>
 </html>

@@ -40,6 +40,33 @@ let svgCirconflexe = document.querySelector('.react')
 svgCirconflexe.addEventListener("click", () => {
   svgCirconflexe.classList.add('.turn');
 })
+
+var button_get= document.getElementById("btn-lvl-1")
+let k = 1
+button_get.addEventListener('click', () => {
+  if(k == 1){
+    button_get.classList.add('activate')
+    console.log('activé')
+    k = 2
+  } else {
+    button_get.classList.remove('activate')
+    console.log('desactivé')
+    k = 1
+  }
+})
+
+function openSearch() {
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+// Close the full screen search box
+function closeSearch() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+
+
+
 /*const slidingNewsletter = document.querySelector('');
 
 window.addEventListener('scroll', () => {
@@ -56,3 +83,10 @@ window.addEventListener('scroll', () => {
         slidingNewsletter.classList.add('active')
     }
 })*/
+// !attention
+/**
+ * !commentaire de plusieurs lignes "/**"
+ * TODO : apprendre les shortcuts == productivité
+ * !cmd + k + u = commentaires
+ */
+// ?suis-je adopté?
