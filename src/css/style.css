@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.ft-font-style{
+    @apply text-white text-sm font-light
+}
+.ft-font-style:hover{
+    @apply text-gray-400
+}
+
+.faq-font-style{
+    @apply font-semibold cursor-pointer
+}
+
+.faq-font-style:hover{
+    @apply text-gray-600
+}
+
+.btn-primary{
+    @apply bg-blue-500 text-white py-2 px-4 rounded 
+}
+
+.btn-primary:hover{
+    @apply bg-blue-300
+}
+.btn-secondary{
+    @apply bg-[#181d25] text-white py-2 px-4 rounded 
+}
+
+.btn-secondary:hover{
+    @apply bg-gray-600
+}
+.input-primary{
+    @apply border shadow-md py-2 px-3 text-gray-700 w-full 
+}
+
+.input-primary:focus{
+    @apply shadow-inner
+}
+
+.btn-info{
+    @apply w-44 border-2 border-t-black border-l-black border-r-blue-500 border-b-blue-500 shadow-lg
+}
+
+.btn-info:hover{
+    @apply border-t-blue-600 bg-gray-300 border-l-blue-600 border-r-black border-b-black
+}
