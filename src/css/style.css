@@ -4,6 +4,33 @@
 
 
 
+.btn-yellow{
+    @apply px-4 py-2 bg-yellow-300 text-[#181d25] font-light rounded-full
+}
+.btn-yellow:hover{
+    @apply bg-yellow-400
+}
+.link-prg{
+    @apply py-3 max-w-10 h-10 transition duration-300
+}
+.link-prg:hover{
+    @apply ease-in-out scale-125
+}
+.text-prg{
+    @apply py-3 px-2 text-sm text-center
+}
+.title-prg{
+    @apply pb-3 pt-7 px-2 text-lg font-bold
+}
+.prg-parent{
+    @apply md:flex-row flex items-center justify-center md:gap-x-10 lg:gap-x-16 flex-col gap-y-[3.25rem] mx-auto lg:px-40 px-20
+}
+.prg{
+    @apply max-w-sm flex flex-col rounded-[10px] items-center bg-[#181d25] text-white pb-[3.25rem] shadow-2xl
+}
+.img-prg{
+    @apply w-full max-h-[17rem] rounded-[10px]
+}
 .ft-font-style{
     @apply text-white text-sm font-light
 }

@@ -18,23 +18,20 @@ for(var i = 1; i<6; i++){
     appear(b,n);
 };
 
-let options = {
-  root:null,
-  rootMargin:'0px',
-  treshold: .1
-} 
-let callback = function(entries, observer){
+
+const observer = new IntersectionObserver((entries) => {
   entries.forEach(function(entry) {
-    if(entry.intersectionRatio > .1){
-      entry.target.classList.add('active')
-      observer.unobserve(entry.target)
-    }
-  })
-}
-let observer = new IntersectionObserver(callback, options);
-document.querySelectorAll('.inactive').forEach(function(r){
-  observer.observe(r)
-})
+    if(entry.isIntersecting){
+      entry.target.classList.add('show')
+      observer.unobserve(entry)
+    } 
+  });
+});
+
+const hiddenElement = document.querySelectorAll('.hide');
+hiddenElement.forEach((e1) => observer.observe(e1));
+
+
 let svgCirconflexe = document.querySelector('.react')
 
 svgCirconflexe.addEventListener("click", () => {
@@ -78,7 +75,7 @@ window.addEventListener('scroll', () => {
     console.log(topElementToTopViewport);
 
     if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.8){
-        slidingNewsletter.classList.add('active')
+        slidingNewsletter.classList.add('show')
     }
 })
 // !attention

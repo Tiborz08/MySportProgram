@@ -153,7 +153,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .pink-left-half {
     display: block;
   }
-  .pink-angle {
+  .yellow-angle {
     -webkit-transform: translate(-100%, -24%) rotate(57deg);
     -ms-transform: translate(-100%, -24%) rotate(57deg);
     transform: translate(-100%, -24%) rotate(57deg);
@@ -367,7 +367,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .pink-left-half {
     display: none;
   }
-  .pink-angle {
+  .yellow-angle {
     left: 15%;
     -webkit-transform: translate(-100%, -30%) rotate(57deg);
     -ms-transform: translate(-100%, -30%) rotate(57deg);
@@ -519,7 +519,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     text-align: left;
   }
 
-  .pink-angle {
+  .yellow-angle {
     display: none;
     -webkit-transform: translate(-100%, -32%) rotate(57deg);
     -ms-transform: translate(-100%, -32%) rotate(57deg);
@@ -1057,7 +1057,7 @@ h3 {
   background-color: #e29eb2;
 }
 
-.pink-angle {
+.yellow-angle {
   position: absolute;
   left: 40%;
   top: 50%;
@@ -1066,7 +1066,7 @@ h3 {
   width: 2000px;
   height: 2000px;
   margin-left: 10px;
-  background-color: #e29eb2;
+  background-color: #f6c765;
   -webkit-transform: translate(-100%, -20%) rotate(57deg);
   -ms-transform: translate(-100%, -20%) rotate(57deg);
   transform: translate(-100%, -20%) rotate(57deg);
@@ -1171,32 +1171,21 @@ h3 {
   flex-basis: 50%;
 }
 
-[class*="inactive-"]{
-    transform: translateY(30px);
-    opacity: 0;
+.hide{
+  transform: translateY(100%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
 }
-.active .inactive-1{
-    transition-delay: 0.1s;
+.show{
+  transform: translateY(0);
+  opacity: 1;
 }
-.active .inactive-2{
-    transition-delay: 0.2s;
-}
-.active .inactive-3{
-    transition-delay: 0.3s;
-}
-.active .inactive-4{
-    transition-delay: 0.4s;
-}
-.active .inactive-5{
-    transition-delay: 0.5s;
-}
-.active .inactive-6{
-    transition-delay: 0.6s;
-}
-.active [class*="inactive-"]{
-    transform: translateY(0);
-    opacity: 1;
-    transition: 1s ease-in;
+
+
+@media(prefers-reduced-motion) {
+  .slide{
+    transition:none;
+  }
 }
 
 .turn{
